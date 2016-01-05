@@ -490,6 +490,68 @@
             "filter": [
                 "==",
                 "class",
+                "main"
+            ],
+            "type": "line",
+            "source": "composite",
+            "id": "tunnel-main-case",
+            "paint": {
+                "line-width": {
+                    "base": 1.1,
+                    "stops": [
+                        [
+                            11,
+                            1
+                        ],
+                        [
+                            14,
+                            3
+                        ],
+                        [
+                            22,
+                            15
+                        ]
+                    ]
+                },
+                "line-color": "rgba(150,147,147,1)",
+                "line-gap-width": {
+                    "base": 1.1,
+                    "stops": [
+                        [
+                            11,
+                            2
+                        ],
+                        [
+                            14,
+                            4
+                        ],
+                        [
+                            22,
+                            8
+                        ]
+                    ]
+                },
+                "line-opacity": 1,
+                "line-dasharray": [
+                    0.5,
+                    1
+                ]
+            },
+            "source-layer": "tunnel"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1442949230869.2683"
+            },
+            "filter": [
+                "==",
+                "class",
                 "motorway"
             ],
             "type": "line",
@@ -509,7 +571,7 @@
                         ],
                         [
                             22,
-                            15
+                            10
                         ]
                     ]
                 },
@@ -532,10 +594,25 @@
                     ]
                 },
                 "line-opacity": 1,
-                "line-dasharray": [
-                    3,
-                    3
-                ]
+                "line-dasharray": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            [
+                                1,
+                                1.5
+                            ]
+                        ],
+                        [
+                            22,
+                            [
+                                4,
+                                3
+                            ]
+                        ]
+                    ]
+                }
             },
             "source-layer": "tunnel"
         },
@@ -570,16 +647,16 @@
                     "base": 1.5,
                     "stops": [
                         [
-                            8.5,
-                            0.5
+                            11,
+                            1
                         ],
                         [
-                            10,
-                            0.75
+                            14,
+                            7
                         ],
                         [
-                            18,
-                            26
+                            22,
+                            22
                         ]
                     ]
                 },
@@ -604,12 +681,16 @@
                     "base": 1.5,
                     "stops": [
                         [
-                            5,
-                            0.75
+                            11,
+                            2
                         ],
                         [
-                            18,
-                            32
+                            14,
+                            10
+                        ],
+                        [
+                            22,
+                            35
                         ]
                     ]
                 },
@@ -1704,6 +1785,70 @@
             "filter": [
                 "in",
                 "class",
+                "street",
+                "main"
+            ],
+            "type": "line",
+            "source": "composite",
+            "id": "bridge-primary-case",
+            "paint": {
+                "line-width": {
+                    "base": 1.1,
+                    "stops": [
+                        [
+                            5,
+                            1
+                        ],
+                        [
+                            14,
+                            3
+                        ],
+                        [
+                            22,
+                            20
+                        ]
+                    ]
+                },
+                "line-color": "rgba(0,0,0,1)",
+                "line-gap-width": {
+                    "base": 1.1,
+                    "stops": [
+                        [
+                            5,
+                            1
+                        ],
+                        [
+                            14,
+                            2
+                        ],
+                        [
+                            22,
+                            8
+                        ]
+                    ]
+                },
+                "line-translate": [
+                    0,
+                    0
+                ]
+            },
+            "source-layer": "bridge"
+        },
+        {
+            "interactive": true,
+            "minzoom": 8,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "butt",
+                "line-join": "round",
+                "line-round-limit": 1.25
+            },
+            "metadata": {
+                "mapbox:group": "1442949209825.1748"
+            },
+            "filter": [
+                "in",
+                "class",
                 "motorway",
                 "motorway_link"
             ],
@@ -1750,6 +1895,163 @@
                     0,
                     0
                 ]
+            },
+            "source-layer": "bridge"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "butt",
+                "line-join": "round",
+                "line-miter-limit": 2
+            },
+            "metadata": {
+                "mapbox:group": "1442949209825.1748"
+            },
+            "filter": [
+                "in",
+                "class",
+                "major_rail",
+                "minor_rail"
+            ],
+            "type": "line",
+            "source": "composite",
+            "id": "bridge-rail",
+            "paint": {
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            14,
+                            1.25
+                        ],
+                        [
+                            20,
+                            4
+                        ]
+                    ]
+                },
+                "line-color": {
+                    "stops": [
+                        [
+                            13,
+                            "#d8d5c8"
+                        ],
+                        [
+                            16,
+                            "#b3b1a6"
+                        ]
+                    ]
+                },
+                "line-opacity": 0.75
+            },
+            "source-layer": "bridge"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "butt",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1442949209825.1748"
+            },
+            "filter": [
+                "in",
+                "class",
+                "major_rail",
+                "minor_rail"
+            ],
+            "type": "line",
+            "source": "composite",
+            "id": "bridge-rail-tracks",
+            "paint": {
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            14,
+                            4
+                        ],
+                        [
+                            20,
+                            8
+                        ]
+                    ]
+                },
+                "line-color": {
+                    "stops": [
+                        [
+                            13,
+                            "#d8d5c8"
+                        ],
+                        [
+                            16,
+                            "rgba(140,139,130,1)"
+                        ]
+                    ]
+                },
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            13.75,
+                            0
+                        ],
+                        [
+                            14,
+                            1
+                        ]
+                    ]
+                },
+                "line-dasharray": [
+                    0.1,
+                    15
+                ]
+            },
+            "source-layer": "bridge"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1442949209825.1748"
+            },
+            "filter": [
+                "in",
+                "class",
+                "main",
+                "street"
+            ],
+            "type": "line",
+            "source": "composite",
+            "id": "bridge-primary",
+            "paint": {
+                "line-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            5,
+                            2
+                        ],
+                        [
+                            14,
+                            2
+                        ],
+                        [
+                            22,
+                            20
+                        ]
+                    ]
+                },
+                "line-color": "#fff",
+                "line-opacity": 1
             },
             "source-layer": "bridge"
         },
@@ -2752,7 +3054,7 @@
     ],
     "created": "2015-12-16T00:31:41.771Z",
     "id": "cii8323c8004w0nlvtss3dbm2",
-    "modified": "2016-01-05T17:05:31.917Z",
+    "modified": "2016-01-05T17:41:04.837Z",
     "owner": "mslee",
     "draft": false
 }

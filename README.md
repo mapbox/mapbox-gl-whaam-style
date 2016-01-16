@@ -8,3 +8,7 @@ Roy Lichtenstein inspired map style for [Mapbox Studio](https://www.mapbox.com/m
 From your Mapbox Studio [Styles page](https://www.mapbox.com/studio/styles/), click **New Style** button then select **Upload a style** tab. Select this `.json` file and click **Create**. Next, upload each `.svg` patterns from the **_assets** folder. Select texture layers in **backgrounds** and **vintage** folders and click Pattern to upload `.svg` files to your project.
 
 Use the newly created map style's `style URL` to add to your projects. Read more on how to [Create and manage map styles](https://www.mapbox.com/help/getting-started-mapbox-studio-1/#create-a-new-style) in Mapbox /help page.
+
+### Custom font
+
+[Knewave](https://github.com/theleagueof/knewave) is the custom font used in this map. It's included in the `_assets`. Read about [how to add custom fonts in Mapbox Studio](https://www.mapbox.com/help/add-custom-fonts/).
